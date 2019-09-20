@@ -1,0 +1,11 @@
+<html>
+<body>
+<div id="observablehq-f5a17fd7"></div>
+<script type="module">
+import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js";
+import define from "https://api.observablehq.com/@d3/radial-tidy-tree.js?v=3";
+const inspect = Inspector.into("#observablehq-f5a17fd7");
+(new Runtime).module(define, name => (name === "chart") && inspect());
+</script>
+</body>
+</html>
